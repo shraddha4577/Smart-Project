@@ -1,0 +1,14 @@
+{
+  "name": "smart-waste-management-digital-twin",
+  "version": "1.0.0",
+  "description": "Smart Waste Management Digital Twin with IoT Simulation, OpenCV/YOLO AI, Leaflet and Recharts",
+  "scripts": {
+    "frontend:dev": "npm --prefix frontend run dev",
+    "frontend:build": "npm --prefix frontend run build",
+    "backend:test": "cd backend && .\\venv\\Scripts\\pytest -v",
+    "backend:start": "cd backend && .\\venv\\Scripts\\python main.py"
+  },
+  "keywords": ["digital-twin", "iot", "smart-waste", "fastapi", "react", "opencv", "leaflet"],
+  "author": "College Capstone Project Team",
+  "license": "MIT"
+}

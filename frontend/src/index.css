@@ -1,0 +1,93 @@
+@import 'leaflet/dist/leaflet.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: #060a14;
+  color: #f1f5f9;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0f1d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f2e52;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4;
+}
+
+/* Custom leaflet map fixes for dark theme */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  background-color: #0a0f1d !important;
+  border-radius: 0.75rem;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #0e1628 !important;
+  color: #f1f5f9 !important;
+  border: 1px solid #1f2e52 !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5) !important;
+}
+
+.leaflet-popup-content {
+  margin: 10px 14px !important;
+  line-height: 1.4 !important;
+}
+
+/* Digital Twin 3D/Cylinder and Glassmorphism utilities */
+.glass-panel {
+  background: rgba(14, 22, 40, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(45, 64, 110, 0.4);
+}
+
+.glass-card {
+  background: rgba(19, 30, 54, 0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(45, 64, 110, 0.3);
+}
+
+.glow-border-cyan {
+  border: 1px solid rgba(6, 182, 212, 0.5);
+  box-shadow: 0 0 15px -3px rgba(6, 182, 212, 0.25);
+}
+
+.glow-border-purple {
+  border: 1px solid rgba(139, 92, 246, 0.5);
+  box-shadow: 0 0 15px -3px rgba(139, 92, 246, 0.25);
+}
+
+.glow-border-green {
+  border: 1px solid rgba(16, 185, 129, 0.5);
+  box-shadow: 0 0 15px -3px rgba(16, 185, 129, 0.25);
+}
+
+.glow-border-red {
+  border: 1px solid rgba(239, 68, 68, 0.5);
+  box-shadow: 0 0 15px -3px rgba(239, 68, 68, 0.25);
+}
